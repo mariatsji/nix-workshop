@@ -1,5 +1,5 @@
-let s = import ./values.nix;
+let actual = import ./values.nix;
 
-in {
-    res = if s == "I am a string" then true else abort "not equal strings";
+in with import ./../utils/nest.nix; {
+    res = assertThat "part1 a string sais it is a string" actual "I am a string";
 }
