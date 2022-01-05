@@ -4,5 +4,5 @@
     assertThat = description: actual: expected: 
         if actual == expected
         then builtins.trace ''${description}: PASS'' true
-        else abort ''${description}: actual: ${actual} but expected: ${expected}'';
+        else abort ''${description}: actual: [${actual}] but expected: [${expected}]'';
 }
