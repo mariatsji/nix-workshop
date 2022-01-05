@@ -1,8 +1,12 @@
 # nest is an awesome testing framework for nix, defined as:
 
-{
-    assertThat = description: actual: expected: 
+let pretty = val :
+    if builtins.typeOf val == "lambda" then "lambda"
+    else ''${builtins.toString val}'';
+
+in {
+    assertEquals = description: actual: expected: 
         if actual == expected
-        then builtins.trace ''${description}: PASS'' true
-        else abort ''${description}: actual: [${actual}] but expected: [${expected}]'';
+        then ''${pretty description}: PASS''
+        else abort ''${pretty description}: actual: [${pretty actual}] but expected: [${pretty expected}]'';
 }
