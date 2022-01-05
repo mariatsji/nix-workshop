@@ -1,0 +1,1 @@
+nix eval -f ./part1.nix res
