@@ -1,0 +1,25 @@
+resolver: lts-18.18
+nix:
+  enable: true
+  shell-file: shell.nix
+  pure: false
+ghc-options:
+  '$everything': -haddock
+packages:
+- .
+extra-deps:
+- github: haskell-works/avro
+  commit: 6e661b03fc9b284293ada14e1354e116b824f11b
+- hasql-migration-0.3.0
+- hasql-th-0.4.0.9
+- headed-megaparsec-0.2.0.1
+- hw-kafka-avro-5.1.0
+- postgresql-error-codes-1.0.1
+- postgresql-syntax-0.4
+- punycode-2.0
+- pure-zlib-0.8.0
+- servant-rawm-server-1.0.0.1
+- https://mavenproxy.finntech.no/finntech-internal-release/no/finntech/adview/company-profile-types/company-profile-types-0.12.tar.gz
+- https://mavenproxy.finntech.no/finntech-internal-release/no/finntech/adview/fiaas-haskell/fiaas-haskell-0.14.tar.gz
+- https://mavenproxy.finntech.no/finntech-internal-release/no/finntech/adview/fiaas-kafka-haskell/fiaas-kafka-haskell-0.12.tar.gz
+- https://mavenproxy.finntech.no/finntech-internal-release/no/finntech/adview/adview-validation-haskell/adview-validation-haskell-0.10.tar.gz

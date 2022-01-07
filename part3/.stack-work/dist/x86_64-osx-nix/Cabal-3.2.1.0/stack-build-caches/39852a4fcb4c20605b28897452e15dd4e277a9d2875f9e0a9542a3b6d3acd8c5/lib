@@ -1,0 +1,14 @@
+/Users/sjur.millidahl/nix/nix-workshop/part3/README.md:
+  hash: d654df5fc53f52a433176276a2a8d04c628b9ca45252b490f9784b617a1c9af7
+/Users/sjur.millidahl/nix/nix-workshop/part3/package.yaml:
+  hash: 23723379ef1f90164ad22aa6b3a687fe09f62bc045ef8d75f1174c67495f680e
+/Users/sjur.millidahl/nix/nix-workshop/part3/src/KafkaInfo.hs:
+  hash: 66d5ea9427d070ed1c923712cc01cb8c3576bce624748444764be7bd71072d27
+/Users/sjur.millidahl/nix/nix-workshop/part3/.stack-work/dist/x86_64-osx-nix/Cabal-3.2.1.0/build/autogen/cabal_macros.h:
+  hash: 2997b8d05b220f3ea4efe3f9c103141daea3dfb832bd0ebb107bdb136890e6e0
+/Users/sjur.millidahl/nix/nix-workshop/part3/part3.cabal:
+  hash: 22ef397b2ee4e42211c7364295c0500b4c2375e538eb8d7d8a028e9667dccfa8
+/Users/sjur.millidahl/nix/nix-workshop/part3/.stack-work/dist/x86_64-osx-nix/Cabal-3.2.1.0/build/autogen/Paths_part3.hs:
+  hash: 021fda37848036bcdab0ed4db9f66202897ab70936b5c85be0e3b9c74f48cddd
+/nix/store/a89gqfkr87q7s2x7561sw4cv7vn4jnsw-ghc-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4

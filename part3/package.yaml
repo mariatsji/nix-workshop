@@ -1,0 +1,73 @@
+name:                part3
+version:             0.1.0.0
+github:              "github.com/mariatsji/nix-workshop"
+author:              "FINN.no"
+maintainer:          "sjur.millidahl@gmail.com"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/company-profile-builder#readme>
+
+default-extensions:
+- BlockArguments
+- DataKinds
+- DeriveAnyClass
+- DeriveGeneric
+- DerivingStrategies
+- DerivingVia
+- FlexibleInstances
+- GeneralisedNewtypeDeriving
+- LambdaCase
+- MultiParamTypeClasses
+- NamedFieldPuns
+- OverloadedStrings
+- PolyKinds
+- QuasiQuotes
+- RecordWildCards
+- ScopedTypeVariables
+- StandaloneDeriving
+- TemplateHaskell
+- TupleSections
+- TypeApplications
+- TypeFamilies
+- TypeOperators
+
+ghc-options:
+- -O2
+- -fwarn-incomplete-patterns
+- -fwarn-redundant-constraints
+- -fwarn-unused-imports
+- -fwarn-unused-packages
+- -F -pgmF=record-dot-preprocessor
+
+_exe-ghc-options: &exe-ghc-options
+- -threaded
+- -rtsopts
+- '"-with-rtsopts=-N2 -T"'
+
+dependencies:
+- base >= 4.7 && < 5
+- record-dot-preprocessor
+- record-hasfield
+
+library:
+  source-dirs: src
+  dependencies:
+    - hw-kafka-client
+
+executables:
+  company-profile-builder:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options: *exe-ghc-options
+    dependencies:
+    - part3
+
