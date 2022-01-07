@@ -2,9 +2,9 @@
 
 Picture yourself as a developer in the near future.
 
-Canibal gangs roam the streets and the media company you work for monitors your laptop closely.
+Cannibal gangs roam the streets and the media company you work for monitors all laptops closely.
 
-Installing a brainfuck interpreter on it is forbidden.
+Installing a brainfuck interpreter on a company laptop is strictly forbidden.
 
 Luckily they do not know about `nix-shell` !
 
