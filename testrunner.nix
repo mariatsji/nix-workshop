@@ -9,5 +9,8 @@ in with import ./utils/nest.nix; {
         "part1 a lambda function from x to x squared applied to 3"
         (exercises.part2 3)
         9;
-
+    res3 = assertEquals
+        "part3 point to another file"
+        (builtins.readFile exercises.part3)
+        ":)";
 }
