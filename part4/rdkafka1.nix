@@ -1,4 +1,4 @@
-let nixpkgs = (import ./artifact.nix).nixpkgs;
+let nixpkgs = (import ../part3/artifact.nix).nixpkgs;
 
 in nixpkgs.rdkafka.overrideAttrs (old: {
     src = nixpkgs.fetchFromGitHub {

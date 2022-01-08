@@ -2,6 +2,14 @@
 
 Welcome!
 
+A nix introductory workshop
+
+## part 0 - Prerequisites
+
+[install nix](https://nixos.org/download.html)
+
+You are done once you can type 'nix-shell --help' in a terminal and get some output
+
 ## part 1
 
 - run ./test.sh
@@ -11,8 +19,12 @@ Welcome!
 
 ## part 2
 
-- cd part2 && cat README.md
+- cd part2 && nix-shell -p bat --run 'bat README.md'
 
 ## part 3
 
-- cd part3 && cat README.md
+- cd part3 && nix-shell -p bat --run 'bat README.md'
+
+## part 4
+
+- cd part4 && nix-shell -p bat --run 'bat README.md'
