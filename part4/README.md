@@ -6,15 +6,16 @@ That is, we need to look at the inputs if we want to know what is different in t
 
 Gabriella Gonzalez wrote a tool for visualizing this, called nix-diff
 
-Your task: examine the diff between `rdkafka1.nix` and `rdkafka2.nix`
+Your task: examine the diff between `simple.nix` and `simple2.nix`
 
 You can bring nix-diff into scope via `nix-shell -p nix-diff`
 
 We then have to actually build the derivations
 
-    nix-build ./rdkafka1.nix
+    nix-build ./simple.nix
 
-    nix-build ./rdkafka2.nix
+    nix-build ./simple2.nix
 
-And then run `nix-diff <rdkafka-1-nix-store-address> <rdkafka2-nix-store-address>`
+And then run `nix-diff <simple-1-nix-store-address> <simple-2-nix-store-address>`
 
+Your task: find out what mysterious extra binary has been made available to the simple2 derivation!
