@@ -8,7 +8,7 @@ in
     nixpkgs = nixpkgs; # we lock all nix things to this version of nixpkgs
     dependencies = [
         nixpkgs.zlib
-        rdkafka
+        nixpkgs.rdkafka
         nixpkgs.postgresql
         nixpkgs.cacert
         # List of nix packages, see https://search.nixos.org/packages.
