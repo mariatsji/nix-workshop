@@ -15,4 +15,6 @@
     # assign an anonymous function that accepts a function (a -> b) and a list of a, returning a list of b
     # read about builtin functions that you can use here (use by e.g. builtins.all)
     part5 = builtins.map;
+    # assign a list containing the string "hello" and the number 2.0
+    part6 = [ "hello" 2.0 ];
 }

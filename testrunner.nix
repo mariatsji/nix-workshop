@@ -33,4 +33,8 @@ in with import ./utils/nest.nix; {
         "part5 create the map function for lists"
         (exercises.part5 builtins.toString [ 1 2 3])
         ["1" "2" "3"];
+    res6 = assertEquals
+        ''part6 assign the list consisting of "hello" and 2.0''
+        exercises.part6
+        [ "hello" 2.0 ];
 }

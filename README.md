@@ -28,3 +28,7 @@ You are done once you can type 'nix-shell --help' in a terminal and get some out
 ## part 4
 
 - cd part4 && nix-shell -p bat --run 'bat README.md'
+
+## part 5
+
+- cd part5 && nix-shell -p bat --run 'bat README.md'
