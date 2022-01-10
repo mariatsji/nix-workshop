@@ -19,16 +19,16 @@ You are done once you can type 'nix-shell --help' in a terminal and get some out
 
 ## part 2
 
-- cd part2 && nix-shell -p bat --run 'bat README.md'
+    cd part2 && nix-shell -p bat --run 'bat README.md'
 
 ## part 3
 
-- cd part3 && nix-shell -p bat --run 'bat README.md'
+    cd part3 && nix-shell -p bat --run 'bat README.md'
 
 ## part 4
 
-- cd part4 && nix-shell -p bat --run 'bat README.md'
+    cd part4 && nix-shell -p bat --run 'bat README.md'
 
 ## part 5
 
-- cd part5 && nix-shell -p bat --run 'bat README.md'
+    cd part5 && nix-shell -p bat --run 'bat README.md'
