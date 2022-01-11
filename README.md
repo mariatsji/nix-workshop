@@ -4,18 +4,18 @@ Welcome!
 
 A nix introductory workshop
 
-## part 0 - Prerequisites
+## Prerequisites
 
 [install nix](https://nixos.org/download.html)
 
-You are done once you can type 'nix-shell --help' in a terminal and get some output
+You are done once you can type `nix-shell --help` in a terminal and get some output
 
 ## part 1
 
-- run ./test.sh
-- open the file exercises.nix and replace each key in the set with a nix expression that seems suitable
-- run ./test.sh
-- repeat
+- run `./test.sh`
+- open the file `exercises.nix` and replace each key in the set with a nix expression that seems suitable
+- run `./test.sh`
+- repeat until all PASS
 
 ## part 2
 

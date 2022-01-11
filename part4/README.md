@@ -16,6 +16,8 @@ We then have to actually build the derivations
 
     nix-build ./simple2.nix
 
-And then run `nix-diff <simple-1-nix-store-address> <simple-2-nix-store-address>`
+And then run 
+
+    nix-diff <simple-1-nix-store-address> <simple-2-nix-store-address>
 
 Your task: find out what mysterious extra binary has been made available to the simple2 derivation!
