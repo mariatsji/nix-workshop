@@ -8,7 +8,9 @@ A nix introductory workshop
 
 [install nix](https://nixos.org/download.html)
 
-You are done once you can type `nix-shell --help` in a terminal and get some output
+MINIMUM VERSION 2.5.1
+
+You are done once you can type `nix --version` in a terminal and get some `nix (Nix) 2.5.1` or higher
 
 ## part 1
 
