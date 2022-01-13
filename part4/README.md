@@ -12,9 +12,9 @@ You can bring nix-diff into scope via `nix-shell -p nix-diff`
 
 We then have to actually build the derivations
 
-    nix-build nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple.nix
+    nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple.nix
 
-    nix-build nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple2.nix
+    nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple2.nix
 
 And then run 
 

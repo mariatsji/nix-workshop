@@ -21,16 +21,16 @@ You are done once you can type `nix --version` in a terminal and get some `nix (
 
 ## part 2
 
-    cd part2 && nix-shell -p bat --run 'bat README.md'
+    cd part2 && nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz -p bat --run 'bat README.md'
 
 ## part 3
 
-    cd part3 && nix-shell -p bat --run 'bat README.md'
+    cd part3 && nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz -p bat --run 'bat README.md'
 
 ## part 4
 
-    cd part4 && nix-shell -p bat --run 'bat README.md'
+    cd part4 && nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz -p bat --run 'bat README.md'
 
 ## part 5
 
-    cd part5 && nix-shell -p bat --run 'bat README.md'
+    cd part5 && nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz -p bat --run 'bat README.md'
