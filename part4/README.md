@@ -12,12 +12,12 @@ You can bring nix-diff into scope via `nix-shell -p nix-diff`
 
 We then have to actually build the derivations
 
-    nix-build ./simple.nix
+    nix-build nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple.nix
 
-    nix-build ./simple2.nix
+    nix-build nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz ./simple2.nix
 
 And then run 
 
-    nix-diff <simple-1-nix-store-address> <simple-2-nix-store-address>
+    nix-shell -p nix-diff --run 'nix-diff <simple-1-nix-store-address> <simple-2-nix-store-address>' -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz
 
 Your task: find out what mysterious extra binary has been made available to the simple2 derivation!
