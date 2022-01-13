@@ -11,7 +11,8 @@
     # create a set containing two keys: a -> true, b -> 5
     part4 = throw "part4 not implemented";
     # assign an anonymous function that accepts a function (a -> b) and a list of a, returning a list of b
-    # read about builtin functions that you can use here (use by e.g. builtins.all)
+    # read about builtin functions that you can use here (use by e.g. builtins.all) here:
+    # https://nixos.org/manual/nix/stable/expressions/builtins.html
     part5 = throw "part5 not implemented";
     # assign a list containing the string "hello" and the number 2.0
     part6 = throw "part6 not implemented";
