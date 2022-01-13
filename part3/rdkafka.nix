@@ -10,7 +10,7 @@ in nixpkgs.rdkafka.overrideAttrs (old: {
       # then nix will fail the build with such an error message:
       # hash mismatch in fixed-output derivation '/nix/store/m1ga09c0z1a6n7rj8ky3s31dpgalsn0n-source':
       # wanted: sha256:0000000000000000000000000000000000000000000000000000
-      # got:    sha256:173gxk0ymiw94glyjzjizp8bv8g72gwkjhacigd1an09jshdrjb4
+      # got:    sha256:<something-something>
       sha256 = "0000000000000000000000000000000000000000000000000000";
     };
   })
