@@ -1,9 +1,9 @@
-nix eval -f ./testrunner.nix res1a
-nix eval -f ./testrunner.nix res1b
-nix eval -f ./testrunner.nix res2
-nix eval -f ./testrunner.nix res3
-nix eval -f ./testrunner.nix res4a
-nix eval -f ./testrunner.nix res4b
-nix eval -f ./testrunner.nix res4c
-nix eval -f ./testrunner.nix res5
-nix eval -f ./testrunner.nix res6
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res1a
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res1b
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res2
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res3
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res4a
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res4b
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res4c
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res5
+nix --extra-experimental-features nix-command eval -f ./testrunner.nix res6
